@@ -42,6 +42,14 @@ class EmdReader:
         x = np.array(self.f['Data']['Image'][key]['Data'])
         x = np.squeeze(x)
         return x
+
+    def visitItems(self):
+        def getattrs(name, obj):
+            print(name)
+            for k, v in obj.attrs.__iter__():
+                print("   ", k, v)
+        
+        self.f.visititems(getattrs)
     
         
 
