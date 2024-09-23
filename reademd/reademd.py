@@ -28,6 +28,8 @@ class EmdReader:
     def getPixelSize(self, idx=0):
         if idx not in self.metadata:
             md = self.readMetadata(idx=idx)
+        else:
+            md = self.metadata[idx]
         
         pixelsize = md['BinaryResult']['PixelSize']
         px = float(pixelsize['width'])*1e9
