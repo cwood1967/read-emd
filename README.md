@@ -1,4 +1,4 @@
-### reademd
+### read-emd
 Simple talos emd file reader for python.
 
 ### Installation

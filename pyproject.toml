@@ -1,0 +1,12 @@
+[build-system]
+requires =["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reademd"
+version = "0.0.1"
+dependencies = [
+    "h5py",
+    "numpy",
+    ]
+
