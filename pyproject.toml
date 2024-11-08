@@ -3,10 +3,30 @@ requires =["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
+authors = [
+    {name = "Chris Wood", email = "cjw@stowers.org"},
+]
+maintainers = [
+    {name = "Chris Wood", email = "cjw@stowers.org"},
+]
 name = "reademd"
+readme = "README.md"
+license = {file = "LICENSE"}
 version = "0.0.1"
+requires-python = ">= 3.9"
 dependencies = [
     "h5py",
     "numpy",
     ]
+classifiers = [
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
 
